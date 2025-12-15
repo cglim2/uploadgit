@@ -11,4 +11,17 @@ vs-code 터미널에서 다음과 같이 실행한다
 8. git add .  => 소스 수정하고 업로드 진행
 9. git status => 원본과 수정본을 확인할 수 있다
 10. git commit -m "second commit"  => 두 번재 커밋 메세지
-11. git push origin master =>  수정사항 최종 업로드
+11. git push origin master =>  수정사항 최종 업로드햣
+
+- git branch -m master main => 이름변경
+
+error: remote origin already exists.
+위 오류시
+1. 기존 원격 저장소 삭제 먼저 기존의 origin 연결을 제거합니다.
+git remote remove origin 복사그 후, 새로운 원격 저장소를 추가합니다.gitremote
+git remote add origin https://github.com/user/new-repo.git
+
+
+error: failed to push some refs to 'https://github.com/cglim2/buttons'
+이오류발생시
+git pull origin master
